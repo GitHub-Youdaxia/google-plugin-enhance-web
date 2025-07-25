@@ -1,5 +1,4 @@
-/*
-var mainComponentUrl111 = document.querySelector('#aaaaaaaa').getAttribute('url')
+const mainComponentUrl111 = document.querySelector('#aaaaaaaa').getAttribute('url')
 new Vue({
   el: '#aaaaaaaa',
   components: {
@@ -7,4 +6,3 @@ new Vue({
   },
   template: '<my-component></my-component>'
 })
- */
