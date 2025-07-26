@@ -1,9 +1,12 @@
-const mainComponentUrl111 = document.querySelector('#aaaaaaaa').getAttribute('url')
-new Vue({
-  el: '#aaaaaaaa',
-  components: {
-    'my-component': httpVueLoader(mainComponentUrl111)
-  },
-  template: '<my-component></my-component>'
-})
-// https://github-youdaxia.github.io/google-plugin-enhance-web/webScript/index.html
+window.googlePluginEnhanceWebInit = () => {
+  let btnObj = {
+    btn1: {
+      text: '按钮1',
+      click: () => {
+        console.log('按钮1点击了')
+      }
+    }
+  }
+  window.googlePluginEnhanceWebInstance.btnObj = btnObj
+  window.googlePluginEnhanceWebInstance.$forceUpdate();
+}

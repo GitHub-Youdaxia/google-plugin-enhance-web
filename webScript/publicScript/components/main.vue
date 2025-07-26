@@ -14,13 +14,20 @@ module.exports = {
     return {
       visible: false,
       message: '',
-      editable: false
+      editable: false,
+      btnObj:{},
     }
   },
   methods:{
     handleClick () {
       this.editable=!this.editable
       document.body.setAttribute('contenteditable',this.editable)
+    }
+  },
+  created () {
+    window.googlePluginEnhanceWebInstance = this
+    if (window.googlePluginEnhanceWebInit) {
+      window.googlePluginEnhanceWebInit()
     }
   }
 }
