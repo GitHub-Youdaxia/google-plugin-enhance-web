@@ -5,6 +5,12 @@ window.googlePluginEnhanceWebInit = () => {
       click: () => {
         console.log('按钮1点击了')
       }
+    },
+    btn2: {
+      text: '按钮2',
+      click: () => {
+        console.log('按钮2点击了')
+      }
     }
   }
   window.googlePluginEnhanceWebInstance.btnObj = btnObj
